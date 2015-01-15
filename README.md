@@ -67,6 +67,8 @@ bundle
 bundle exec rails g spree_fastly:install
 ```
 
+The extension comes with a special VCL to use with Fastly, it can be found at ```/fastly_default.vcl```. If you plan to use the API auth with the header style token, also review ```/fastly_allow_api_header.vcl```. 
+
 For debugging ease's sake, you might want to disable Rails' own caching
 mechanism:
 
